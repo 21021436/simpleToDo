@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Simple To Do</string>
+    <string name="newTaskHint">Type in a new task here</string>
+    <string name="indexTaskEnter">Type in the index of the task to be removed</string>
+    <string-array name="addRemoveItems">
+        <item>
+            Add a new task
+        </item>
+        <item>
+            Remove a task
+        </item>
+    </string-array>
+</resources>

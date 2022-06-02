@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinnerAddRemove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/addRemoveItems"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/editNewItemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/newTaskHint"
+        android:text="" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonAddNewItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:height="0dp"
+            android:text="Add"
+            app:backgroundTint="#004D40" />
+
+        <Button
+            android:id="@+id/buttonDeleteItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:height="0dp"
+            android:text="Delete"
+            app:backgroundTint="#880E4F" />
+
+        <Button
+            android:id="@+id/buttonClearAllItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:height="0dp"
+            android:text="Clear"
+            app:backgroundTint="#B71C1C" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewToDoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
